@@ -1,5 +1,56 @@
 # springboot-ws-producer
 
+#### WSDL file
+```
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:sch="http://revature.com/webservice" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://revature.com/webservice" targetNamespace="http://revature.com/webservice">
+<wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://revature.com/webservice">
+<xs:element name="getLoginRequest">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="email" type="xs:string"/>
+<xs:element name="password" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="getLoginResponse">...</xs:element>
+<xs:complexType name="user">...</xs:complexType>
+</xs:schema>
+</wsdl:types>
+<wsdl:message name="getLoginResponse">
+<wsdl:part element="tns:getLoginResponse" name="getLoginResponse"> </wsdl:part>
+</wsdl:message>
+<wsdl:message name="getLoginRequest">
+<wsdl:part element="tns:getLoginRequest" name="getLoginRequest"> </wsdl:part>
+</wsdl:message>
+<wsdl:portType name="UsersPort">
+<wsdl:operation name="getLogin">
+<wsdl:input message="tns:getLoginRequest" name="getLoginRequest"> </wsdl:input>
+<wsdl:output message="tns:getLoginResponse" name="getLoginResponse"> </wsdl:output>
+</wsdl:operation>
+</wsdl:portType>
+<wsdl:binding name="UsersPortSoap11" type="tns:UsersPort">
+<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+<wsdl:operation name="getLogin">
+<soap:operation soapAction=""/>
+<wsdl:input name="getLoginRequest">
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output name="getLoginResponse">
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+</wsdl:binding>
+<wsdl:service name="UsersPortService">
+<wsdl:port binding="tns:UsersPortSoap11" name="UsersPortSoap11">
+<soap:address location="http://localhost:8090/ws"/>
+</wsdl:port>
+</wsdl:service>
+</wsdl:definitions>
+```
+
+
 #### Input XML
 ```
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
