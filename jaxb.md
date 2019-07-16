@@ -4,15 +4,6 @@
 	* the ability to marshal Java objects into XML and the inverse, i.e. to unmarshal XML back into Java objects.
 
 
-* XML
-```
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<user>
-<name>Naresh</name>
-<email>naresh@gmail.com</name>
-<password>pass123</password>
-</user>
-```
 
 #### User class annotated with JAXB annotations
 ```
@@ -60,6 +51,16 @@ public class User {
 		}
 ```
 
+#### Output XML:
+```
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<user>
+<name>Naresh</name>
+<email>naresh@gmail.com</name>
+<password>pass123</password>
+</user>
+```
+
 #### Dependency
 ```
 <dependency>
@@ -70,5 +71,3 @@ public class User {
 ```
 
 
-#### Schema Generator - Generate Classes based on XSD
-![](jaxb.png)
