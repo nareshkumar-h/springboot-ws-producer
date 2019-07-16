@@ -2,7 +2,6 @@
 
 #### WSDL file
 ```
-This XML file does not appear to have any style information associated with it. The document tree is shown below.
 <wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:sch="http://revature.com/webservice" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://revature.com/webservice" targetNamespace="http://revature.com/webservice">
 <wsdl:types>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://revature.com/webservice">
