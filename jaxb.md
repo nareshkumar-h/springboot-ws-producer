@@ -1,4 +1,8 @@
 #### JAXB 
+* Java Architecture for XML Binding (JAXB) is a software framework that allows Java developers to map Java classes to XML representations. 
+* JAXB provides two main features: 
+	* the ability to marshal Java objects into XML and the inverse, i.e. to unmarshal XML back into Java objects.
+
 ![](jaxb.png)
 
 * XML
