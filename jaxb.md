@@ -56,3 +56,12 @@ public class User {
 			e.printStackTrace();
 		}
 ```
+
+#### Dependency
+```
+<dependency>
+	<groupId>javax.xml.bind</groupId>
+	<artifactId>jaxb-api</artifactId>
+	<version>2.3.1</version>
+</dependency> 
+```
