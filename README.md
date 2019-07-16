@@ -1,6 +1,35 @@
-# springboot-ws-producer
+# SOAP Webservice
+* SOAP (Simple Object Access Protocol): a description of an xml messaging protocol
 
 #### WSDL file
+* WSDL 1.1(Web Service Description Language) is an XML markup language used to describe a WebService. 
+* WSDL is used to specify the exact message format, Internet protocol, and address that a client must use to communicate with a particular Webservice.
+
+#### Definitions
+<defintions> - The root tag of the WSDL that defines the name of the web service, declares multiple namespaces used throughout the document and contains all of the following service elements:
+
+#### Types
+<types> - Contains the data types to be used in the messages in the form of XML schemas.
+	
+#### Message
+<message> - Maps parameters and return types of web service methods.
+
+#### Port Type
+<portType> - An abstract set of operations mapped to one or more end points, defining the collection of operations for a binding.
+	
+#### Binding
+<binding> - The concrete protocol and data formats for the operations and messages defined for a particular port type; includes the encoding type and transport protocol.
+
+#### Service
+<service> - A collection of related end-points encompassing the service definitions in the file; map the binding to the port and include any extensibility definitions.
+
+#### Operation
+<operation> -  An abstract description of an action supported by the service.
+
+#### Port
+<port> - A single endpoint defined as a combination of a binding and a network address.
+	
+#### Example - WSDL for Login API
 ```
 <wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:sch="http://revature.com/webservice" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://revature.com/webservice" targetNamespace="http://revature.com/webservice">
   <wsdl:types>
