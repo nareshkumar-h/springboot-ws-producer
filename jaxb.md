@@ -3,7 +3,6 @@
 * JAXB provides two main features: 
 	* the ability to marshal Java objects into XML and the inverse, i.e. to unmarshal XML back into Java objects.
 
-![](jaxb.png)
 
 * XML
 ```
