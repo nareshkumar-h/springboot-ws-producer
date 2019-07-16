@@ -68,3 +68,7 @@ public class User {
 	<version>2.3.1</version>
 </dependency> 
 ```
+
+
+#### Schema Generator - Generate Classes based on XSD
+![](jaxb.png)
